@@ -1,1 +1,0 @@
-# Diograph Client
