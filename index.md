@@ -1,37 +1,37 @@
 # Diograph Documentation
 
-You can use the [editor on GitHub](https://github.com/DioryMe/dioryme.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Diograph Platform opens up your own data to the apps.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+## Diograph Server
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Simple REST API that is JSON-API compliant.
 
-```markdown
-Syntax highlighted code block
+This is where your apps can make requests to read and write your information.
 
-# Header 1
-## Header 2
-### Header 3
+[Explore the documentation](diograph-server.html)
 
-- Bulleted
-- List
+## Diograph Store
 
-1. Numbered
-2. List
+Javascript library to make it as easy as possible for you to build Diograph apps.
 
-**Bold** and _Italic_ and `Code` text
+Your Javascript API to read and write to Diograph Server.
 
-[Link](url) and ![Image](src)
-```
+[Explore the documentation](diograph-store.html)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Diograph Authentication
 
-### Jekyll Themes
+To keep your information safe, Diograph Server requires an authentication token attached to the every header of your every request.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/DioryMe/dioryme.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+This npm package has been made to make it as easy as possible for you to implement basic authentication to your Diograph apps.
 
-### Support or Contact
+[Explore the documentation](diograph-auth.html)
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Diograph Client
+
+The heart of the Diograph is the way it combines the sustainability of files and folders and the mobile access and app development possibilites of REST API.
+
+This NodeJS executable uploads your information from your folders to the server and / or downloads your information to your local hard drive.
+
+[Explore the documentation](diograph-client.html)
+
