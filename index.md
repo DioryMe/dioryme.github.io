@@ -15,7 +15,7 @@ This is where your apps can make requests to read and write your information.
 
 Javascript library to make it as easy as possible for you to build Diograph apps.
 
-Your Javascript API to read and write to Diograph Server.
+Your Javascript API to read and write diories and connections on Diograph Server.
 
 [Explore the documentation](diograph-store.html)
 
