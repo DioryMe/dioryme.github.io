@@ -46,11 +46,11 @@ Updates the name of the diory.
 
 Returns Promise\<Diory>.
 
-### DS.delete(type, id)
+### DS.delete(id)
 
 Deletes a diory.
 
-Returns "undefined".
+Returns Promise\<"undefined">.
 
 ### DS.connect(fromDioryId, toDioryId)
 
