@@ -73,23 +73,43 @@ Returns array of search result objects:
 ### Parameters
 
 #### Query
+
+Returns only diories that contain given string in the name.
+
+**Accepted values:** Query string
+
 ```
-?q=first (string)
+?q=first
 ```
 
 #### Type
+
+Returns only diories of given type.
+
+**Accepted values:** Any diory type: place, check-in etc.
+
 ```
-?type=place (place, date, check-in etc. => all the existing diory types)
+?type=place
 ```
 
 #### Date
+
+Returns only date diories that contain given string in the name.
+
+**Accepted values:** Query string
+
 ```
-?date=2015 (string)
+?date=2015
 ```
 
 #### Sort
+
+Returns diories in given order.
+
+**Accepted values:** "a-first", "z-first", "newest-first", "oldest-first"
+
 ```
-?sort=a-first (a-first, z-first, newest-first, oldest-first)
+?sort=a-first
 ```
 
 
