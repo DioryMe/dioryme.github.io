@@ -51,8 +51,9 @@ DELETE /connections/1
 
 
 ### Search
+
 ```
-GET /search?q=querystring
+GET /search?q=home&type=place&sort=newest-first
 ```
 
 Returns array of search result objects:
@@ -60,11 +61,25 @@ Returns array of search result objects:
 [
   {
     "id": 1,
-    "value": "Querystring result 1"
+    "value": "Diory name 1"
   },
   {
     "id": 2,
-    "value": "Querystring result 2"
+    "value": "Diory name 2"
   }
 ]
 ```
+
+**Parameters:**
+
+```
+Query ?q=first (string)
+
+Type ?type=place (place, date, check-in etc. => all the existing diory types)
+
+Date ?date=2015 (string)
+
+Sort ?sort=a-first (a-first, z-first, newest-first, oldest-first)
+```
+
+
