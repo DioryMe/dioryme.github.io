@@ -70,16 +70,26 @@ Returns array of search result objects:
 ]
 ```
 
-**Parameters:**
+### Parameters
 
+#### Query
 ```
-Query ?q=first (string)
+?q=first (string)
+```
 
-Type ?type=place (place, date, check-in etc. => all the existing diory types)
+#### Type
+```
+?type=place (place, date, check-in etc. => all the existing diory types)
+```
 
-Date ?date=2015 (string)
+#### Date
+```
+?date=2015 (string)
+```
 
-Sort ?sort=a-first (a-first, z-first, newest-first, oldest-first)
+#### Sort
+```
+?sort=a-first (a-first, z-first, newest-first, oldest-first)
 ```
 
 

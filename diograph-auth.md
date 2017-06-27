@@ -10,7 +10,7 @@ DiographAuthentication.onLogin() = () => { }
 DiographAuthentication.onLogout() = () => { }
 ```
 
-## <diograph-login> element
+## \<diograph-login> element
 
 Authentication can be done with <diograph-login> element in two ways:
 
