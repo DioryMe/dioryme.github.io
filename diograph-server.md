@@ -16,6 +16,18 @@ This API uses room-id as an authentication token.
 
 This API requires authorization token in request header, e.g. ```Authorization: 5e423f7c-8545-4ae9-ad7d-634a7f00e03a```
 
+## Pagination
+
+Default pagination is 30 items per page. Maximum items per page is 100.
+
+```
+GET /diories?page[number]=3 # Returns the third page of diories (from 61-90)
+
+GET /diories?page[size]=10 # Return only 10 items per page
+
+GET /diories?page[size]=10&page[number]=3 # Parameters can also be combined
+```
+
 ## Endpoints
 
 ### Diories
@@ -33,6 +45,10 @@ DELETE /diories/1
 
 [Example requests and responses](https://github.com/jvalanen/diory-docs/wiki/Reading-diories)
 
+#### Diories filters
+```
+GET /diories?filter[diory_type]=place # Returns only spefic type of diories
+```
 
 ### Connections
 ```
@@ -70,7 +86,7 @@ Returns array of search result objects:
 ]
 ```
 
-### Parameters
+### Search parameters
 
 #### Query
 
