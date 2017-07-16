@@ -33,7 +33,7 @@ Returns Promise\<Diory>.
 
 Retrieve all diories with given type from Diograph API.
 
-Returns Promise\<Array\<Diory>>.
+Returns Promise\<Array\<Diory\>\>.
 
 ### DS.create(obj)
 
@@ -60,6 +60,7 @@ Updates the attributes of the diory.
 DS.update(123, {
   "name": "New name"
 })
+```
 
 Returns Promise\<Diory>.
 
