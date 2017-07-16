@@ -9,6 +9,18 @@ Makes it easy to read and write diories and connections on Diograph Server throu
 npm install diograph-store --save-dev
 ```
 
+## Example
+
+```
+import DiographStore from "diograph-store"
+
+DiographStore.setAuthToken("my-own-token")
+
+DiographStore.getAll().then(res => {
+    console.log(res)
+})
+```
+
 ## Usage / API
 
 ### DS.get(id)
@@ -17,9 +29,9 @@ Retrieve diory from Diograph API.
 
 Returns Promise\<Diory>.
 
-### DS.getAll()
+### DS.getAll(type)
 
-Retrieve all diories from Diograph API.
+Retrieve all diories with given type from Diograph API.
 
 Returns Promise\<Array\<Diory>>.
 
@@ -40,9 +52,14 @@ Object given as attribute could look like this:
 
 Returns Promise\<Diory>
 
-### DS.update(id, name)
+### DS.update(id, obj)
 
-Updates the name of the diory.
+Updates the attributes of the diory.
+
+```
+DS.update(123, {
+  "name": "New name"
+})
 
 Returns Promise\<Diory>.
 
@@ -50,7 +67,10 @@ Returns Promise\<Diory>.
 
 Deletes a diory.
 
-Returns Promise\<"undefined">.
+Returns Promise\<void>.
+
+
+**=== Everything under this line hasn't been implemented yet ===**
 
 ### DS.connect(fromDioryId, toDioryId)
 
