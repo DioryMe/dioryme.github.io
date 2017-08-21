@@ -26,7 +26,7 @@ curl 'http://localhost:3000/v1/connections/' \
         "height": "20%",
         "left": "220%"
       },
-      "room-id": "5e423f7c-8545-4ae9-ad7d-634a7f00e03a",
+      "room-id": "(not available)",
       "created-at": "2017-08-19T20:16:51.871+03:00",
       "updated-at": "2017-08-19T20:16:51.871+03:00",
       "from-diory-id": 6507,

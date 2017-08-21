@@ -1,17 +1,14 @@
 
-# Example requests & responses - GET
+# Example requests & responses
 
-[/diories request](#diories-request)
+GET /diories request
+GET /diories response
+GET /diories/1 request
+GET /diories/1 response
 
-[/diories response](#diories-response)
+[POST /diories & PATCH /diories/123 & DELETE /diories/123](https://github.com/jvalanen/diory-docs/wiki)
 
-[/diories/1 request](#diories1-request)
-
-[/diories/1 response](#diories1-response)
-
-
-## /diories request
-[Back to top](#example-requests--responses---get)
+## GET /diories request
 
 ```
 curl 'http://localhost:3000/v1/diories/' \
@@ -19,8 +16,7 @@ curl 'http://localhost:3000/v1/diories/' \
   -H 'Accept: application/vnd.api+json'
 ```
 
-## /diories response
-[Back to top](#example-requests--responses---get)
+## GET /diories response
 
 ```
 200 - OK
@@ -76,7 +72,6 @@ curl 'http://localhost:3000/v1/diories/' \
 ```
 
 ## /diories/1 request
-[Back to top](#example-requests--responses---get)
 
 ```
 curl 'http://localhost:3000/v1/diories/1'
@@ -85,7 +80,6 @@ curl 'http://localhost:3000/v1/diories/1'
 ```
 
 ## /diories/1 response
-[Back to top](#example-requests--responses---get)
 
 ```
 200 - OK
