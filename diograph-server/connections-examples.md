@@ -2,6 +2,7 @@
 # Example requests & responses - GET
 
 GET /connections/123
+
 [POST /connections & DELETE /connections/123](https://github.com/jvalanen/diory-docs/wiki)
 
 ## GET /connections/123 request

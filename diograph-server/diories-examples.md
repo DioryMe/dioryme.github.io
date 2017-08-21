@@ -2,8 +2,11 @@
 # Example requests & responses
 
 GET /diories request
+
 GET /diories response
+
 GET /diories/1 request
+
 GET /diories/1 response
 
 [POST /diories & PATCH /diories/123 & DELETE /diories/123](https://github.com/jvalanen/diory-docs/wiki)
