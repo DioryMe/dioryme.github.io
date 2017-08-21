@@ -54,7 +54,7 @@ PATCH /diories/1
 DELETE /diories/1
 ```
 
-[Example requests and responses](https://github.com/jvalanen/diory-docs/wiki/Reading-diories)
+[Example requests and responses](diograph-server/diories-examples.html)
 
 
 ### Connections
@@ -77,4 +77,4 @@ DELETE /connections/1
 GET /search?q=home&type=place&sort=newest-first
 ```
 
-[Example queries and responses](diograph-server/search-endpoint-examples.html)
+[Example queries and responses](diograph-server/search-examples.html)
