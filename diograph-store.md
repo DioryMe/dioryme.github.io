@@ -1,12 +1,11 @@
 # Diograph Store
 
-Javascript library to make it as easy as possible for you to build Diograph apps.
-Makes it easy to read and write diories and connections on Diograph Server through Javascript API instead of REST requests.
+Easy-to-use API for Diograph API. Read, write and connect diories without manual REST requests. Build your Diograph app without a hassle.
 
 ## Install
 
 ```
-npm install diograph-store --save-dev
+npm install diograph-store
 ```
 
 ## Example
@@ -23,23 +22,25 @@ DiographStore.getAll().then(res => {
 
 ## Usage / API
 
-### DS.get(id)
+* Optional parameter
+
+### DS.getDiory(id)
 
 Retrieve diory from Diograph API.
 
 Returns Promise\<Diory>.
 
-### DS.getAll(type)
+### DS.getAllDiories(type*)
 
-Retrieve all diories with given type from Diograph API.
+Retrieve all diories with given type from Diograph API. Returns all diories with any type if type is not given.
 
 Returns Promise\<Array\<Diory\>\>.
 
-### DS.create(obj)
+### DS.createDiory(obj)
 
 Create a new diory.
 
-Object given as attribute could look like this:
+Object given as a parameter could look like this:
 ```
 {
   "name": "My first diory",
@@ -52,7 +53,56 @@ Object given as attribute could look like this:
 
 Returns Promise\<Diory>
 
-### DS.update(id, obj)
+### DS.createAndConnectDiory(obj, fromDioryId)
+
+Creates a new diory and connects it to another diory.
+
+Object given as a parameter could look the same as in "DS.create()".
+
+Returns Promise\<ConnectionObject>.
+
+```
+{
+  "connection": <Connection>,
+  "fromDiory": <Diory>,
+  "toDiory": <Diory>
+}
+```
+
+### DS.createAndConnectDioryStrongly(obj, fromDioryId)
+
+Creates a new diory and connects it to another diory from both sides.
+
+Object given as a parameter could look the same as in "DS.create()".
+
+Returns Promise\<ConnectionObject>.
+
+```
+{
+  "connection": <Connection>,
+  ("reversedConnection": <Connection>,) <= not yet implemented
+  "fromDiory": <Diory>,
+  "toDiory": <Diory>
+}
+```
+
+### DS.connectDiories(fromDioryId, toDioryId)
+
+Connects two diories.
+
+Returns Promise\<ConnectionObject>.
+
+```
+{
+  "connection": <Connection>,
+  "fromDiory": <Diory>,
+  "toDiory": <Diory>
+}
+```
+
+**=== Nothing under this line have been implemented yet ===**
+
+### DS.updateDiory(id, obj)
 
 Updates the attributes of the diory.
 
@@ -70,40 +120,22 @@ Deletes a diory.
 
 Returns Promise\<void>.
 
+### DS.connectDioriesStrongly(fromDioryId, toDioryId)
 
-**=== Everything under this line hasn't been implemented yet ===**
+Connects two diories from both sides.
 
-### DS.connect(fromDioryId, toDioryId)
-
-Connects two diories.
-
-Returns Promise\<Object>.
+Returns Promise\<ConnectionObject>.
 
 ```
 {
   "connection": <Connection>,
+  "reversedConnection": <Connection>,
   "fromDiory": <Diory>,
   "toDiory": <Diory>
 }
 ```
 
-### DS.createAndConnect(obj, fromDioryId)
-
-Creates a new diory and connects it to another diory.
-
-Object given as attribute could look the same as in "DS.create()".
-
-Returns Promise\<Object>.
-
-```
-{
-  "connection": <Connection>,
-  "fromDiory": <Diory>,
-  "toDiory": <Diory>
-}
-```
-
-### DS.demote(relatedDiory, dioryInFocus)
+### DS.demoteDiories(fromDioryId, toDioryId)
 
 Deletes connection between two diories.
 
