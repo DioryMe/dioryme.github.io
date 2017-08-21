@@ -1,9 +1,11 @@
 
-### Search
+# Search endpoint
 
 ```
 GET /search?q=home&type=place&sort=newest-first
 ```
+
+### Response
 
 Returns array of search result objects:
 ```
@@ -18,6 +20,13 @@ Returns array of search result objects:
   }
 ]
 ```
+
+### Default sort
+
+Search results are sorted automatically by the following criteria:
+1. name begins with the query string
+2. alphabetical order by name
+
 
 ### Search parameters
 
