@@ -28,7 +28,18 @@ GET /diories?page[size]=10 # Return only 10 items per page
 GET /diories?page[size]=10&page[number]=3 # Parameters can also be combined
 ```
 
-## Endpoints
+## Filters
+
+Filters the endpoint responses.
+
+By diory-type:
+```
+# Returns only spefic type of diories
+GET /diories?filter[diory-type]=place
+```
+
+
+## API V1 endpoints
 
 ### Diories
 ```
@@ -45,15 +56,9 @@ DELETE /diories/1
 
 [Example requests and responses](https://github.com/jvalanen/diory-docs/wiki/Reading-diories)
 
-#### Diories filters
-```
-GET /diories?filter[diory_type]=place # Returns only spefic type of diories
-```
 
 ### Connections
 ```
-GET /connections
-
 GET /connections/1
 
 POST /connections
