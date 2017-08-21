@@ -1,15 +1,17 @@
 
 # Example requests & responses - GET
 
+GET /connections/123
+[POST /connections & DELETE /connections/123](https://github.com/jvalanen/diory-docs/wiki)
 
-## /connections/123 request
+## GET /connections/123 request
 ```
 curl 'http://localhost:3000/v1/connections/' \
   -H 'Authorization: 5e423f7c-8545-4ae9-ad7d-634a7f00e03a' \
   -H 'Accept: application/vnd.api+json'
 ```
 
-## /connections/123 response
+## GET /connections/123 response
 
 ```
 {
