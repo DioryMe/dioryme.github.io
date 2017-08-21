@@ -22,8 +22,6 @@ DiographStore.getAll().then(res => {
 
 ## Usage / API
 
-* Optional parameter
-
 ### DS.getDiory(id)
 
 Retrieve diory from Diograph API.
