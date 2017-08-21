@@ -27,11 +27,3 @@ This npm package has been made to make it as easy as possible for you to impleme
 
 [Explore the documentation](diograph-auth.html)
 
-## Diograph Client
-
-The heart of the Diograph is the way it combines the sustainability of files and folders and the mobile access and app development possibilites of REST API.
-
-This NodeJS executable uploads your information from your folders to the server and / or downloads your information to your local hard drive.
-
-[Explore the documentation](diograph-client.html)
-
