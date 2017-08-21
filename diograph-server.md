@@ -68,7 +68,7 @@ PATCH /connections/1
 DELETE /connections/1
 ```
 
-[Example requests and responses](https://github.com/jvalanen/diory-docs/wiki/Reading-connections)
+[Example requests and responses](diograph-server/connections-examples.html)
 
 
 ### Search
