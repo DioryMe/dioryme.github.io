@@ -77,4 +77,4 @@ DELETE /connections/1
 GET /search?q=home&type=place&sort=newest-first
 ```
 
-[Example queries and responses](diograph-server-search.html)
+[Example queries and responses](diograph-server/search-endpoint-examples.html)
