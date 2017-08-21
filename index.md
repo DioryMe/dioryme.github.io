@@ -30,7 +30,7 @@ This npm package has been made to make it as easy as possible for you to impleme
 
 ## CHANGELOG
 
-### 2017-08-21
+### 2017-08-21 - August Release
 
 **Upgrades:**
 - Diograph-store npm package => 0.0.8
@@ -39,7 +39,7 @@ This npm package has been made to make it as easy as possible for you to impleme
 
 **Added:**
 - *CheckInApp:* Diograph-authentication in use, multiple users enabled
-- *CheckInApp:* Diograph-store in use in check-in-app
+- *CheckInApp:* Diograph-store in use
 - *DiographServer:* Sign up & sign in & initial home screen
 - *DiographServer:* Pagination to diories#index
 - *DiographServer:* diory_type filter
