@@ -1,5 +1,7 @@
 # Diograph Authentication
 
+A way to save token and API baseUrl in the localStorage where Diograph Apps can read and use them to access the Diograph Server.
+
 ```
 npm install diograph-authentication
 
