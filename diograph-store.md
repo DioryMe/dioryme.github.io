@@ -15,7 +15,7 @@ import DiographStore from "diograph-store"
 
 DiographStore.setAuthToken("my-own-token")
 
-DiographStore.getAll().then(res => {
+DiographStore.getAllDiories().then(res => {
     console.log(res)
 })
 ```
