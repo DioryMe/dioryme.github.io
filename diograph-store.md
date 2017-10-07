@@ -26,9 +26,26 @@ DiographStore.getAllDiories().then(res => {
 
 Retrieve diory from Diograph API.
 
+Current diory interface:
+```
+  id: string;
+  name: string;
+  url: string;
+  type: string;
+  background: string;
+  date: string;
+  geo: {
+    type: string,
+    latitude: string,
+    longitude: string,
+    geoRadius: string
+  };
+  connectedDiories = Array<Diory>;
+```
+
 Returns Promise\<Diory>.
 
-### DS.getAllDiories(type*)
+### DS.getAllDiories(type\*)
 
 Retrieve all diories with given type from Diograph API. Returns all diories with any type if type is not given.
 
