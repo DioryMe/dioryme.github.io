@@ -27,6 +27,13 @@ This npm package has been made to make it as easy as possible for you to impleme
 
 [Explore the documentation](diograph-auth.html)
 
+## Diograph Search Create
+
+Combined input field for searching and creating diories.
+It suggests diories as search results or diories to be created.
+
+[Explore the documentation](diograph-search-create.html)
+
 
 ## CHANGELOG
 
