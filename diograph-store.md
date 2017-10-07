@@ -11,7 +11,7 @@ npm install diograph-store
 ## Example
 
 ```
-import DiographStore from "diograph-store"
+import { DiographStore } from "diograph-store"
 
 DiographStore.setAuthToken("my-own-token")
 
@@ -22,7 +22,7 @@ DiographStore.getAllDiories().then(res => {
 
 ## Usage / API
 
-### DS.getDiory(id)
+### DiographStore.getDiory(id)
 
 Retrieve diory from Diograph API.
 
@@ -45,13 +45,15 @@ Current diory interface:
 
 Returns Promise\<Diory>.
 
-### DS.getAllDiories(type\*)
+### DiographStore.getAllDiories(type\*)
 
 Retrieve all diories with given type from Diograph API. Returns all diories with any type if type is not given.
 
 Returns Promise\<Array\<Diory\>\>.
 
-### DS.createDiory(obj)
+\* optional parameter
+
+### DiographStore.createDiory(obj)
 
 Create a new diory.
 
@@ -68,11 +70,11 @@ Object given as a parameter could look like this:
 
 Returns Promise\<Diory>
 
-### DS.createAndConnectDiory(obj, fromDioryId)
+### DiographStore.createAndConnectDiory(obj, fromDioryId)
 
 Creates a new diory and connects it to another diory.
 
-Object given as a parameter could look the same as in "DS.create()".
+Object given as a parameter is the same as in "DiographStore.createDiory()".
 
 Returns Promise\<ConnectionObject>.
 
@@ -84,11 +86,11 @@ Returns Promise\<ConnectionObject>.
 }
 ```
 
-### DS.createAndConnectDioryStrongly(obj, fromDioryId)
+### DiographStore.createAndConnectDioryStrongly(obj, fromDioryId)
 
 Creates a new diory and connects it to another diory from both sides.
 
-Object given as a parameter could look the same as in "DS.create()".
+Object given as a parameter is the same as in "DiographStore.createDiory()".
 
 Returns Promise\<ConnectionObject>.
 
@@ -101,7 +103,7 @@ Returns Promise\<ConnectionObject>.
 }
 ```
 
-### DS.connectDiories(fromDioryId, toDioryId)
+### DiographStore.connectDiories(fromDioryId, toDioryId)
 
 Connects two diories.
 
@@ -115,27 +117,26 @@ Returns Promise\<ConnectionObject>.
 }
 ```
 
-**=== Nothing under this line have been implemented yet ===**
-
-### DS.updateDiory(id, obj)
+### DiographStore.updateDiory(id, obj)
 
 Updates the attributes of the diory.
 
-```
-DS.update(123, {
-  "name": "New name"
-})
-```
+Object given as a parameter is the same as in "DiographStore.createDiory()".
 
-Returns Promise\<Diory>.
+Returns Promise\<Diory>
 
-### DS.delete(id)
+
+### DiographStore.deleteDiory(id)
 
 Deletes a diory.
 
 Returns Promise\<void>.
 
-### DS.connectDioriesStrongly(fromDioryId, toDioryId)
+
+**=== Nothing under this line have been implemented yet ===**
+
+
+### DiographStore.connectDioriesStrongly(fromDioryId, toDioryId)
 
 Connects two diories from both sides.
 
@@ -150,8 +151,15 @@ Returns Promise\<ConnectionObject>.
 }
 ```
 
-### DS.demoteDiories(fromDioryId, toDioryId)
+### DiographStore.demoteDiories(fromDioryId, toDioryId)
 
 Deletes connection between two diories.
 
-Returns Promise\<Connection> (???).
+Returns Promise\<void>.
+
+
+### DiographStore.demoteDioriesStrongly(fromDioryId, toDioryId)
+
+Deletes connection of two diories from both sides.
+
+Returns Promise\<void>.
