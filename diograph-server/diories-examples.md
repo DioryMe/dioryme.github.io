@@ -40,10 +40,14 @@ curl 'http://localhost:3000/v1/diories/' \
         "name": "2015-05-31 13.44.36.jpg",
         "address": null,
         "background": "http://diomber.s3.amazonaws.com/U2nZocL5JjP8KfF7GvOqt9zEwxMah3k6.jpg",
-        "location": {
-          "type": "",
-          "coordinates": []
+        "geo": {
+          "type": "GeoCircle",
+          "latitude": null,
+          "longitude": null,
+          "geoRadius": "50"
         },
+        latitude: null,
+        longitude: null,
         "date": null,
         "created": "2015-05-31T13:45:06+03:00",
         "modified": "2015-05-31T13:45:06+03:00",
@@ -102,14 +106,18 @@ curl 'http://localhost:3000/v1/diories/1'
       "name": "2015-05-31 13.44.36.jpg",
       "address": null,
       "background": "http://diomber.s3.amazonaws.com/U2nZocL5JjP8KfF7GvOqt9zEwxMah3k6.jpg",
-      "location": {
-        "type": "",
-        "coordinates": []
+      "geo": {
+        "type": "GeoCircle",
+        "latitude": null,
+        "longitude": null,
+        "geoRadius": "50"
       },
+      latitude: null,
+      longitude: null,
       "date": null,
       "created": "2015-05-31T13:45:06+03:00",
       "modified": "2015-05-31T13:45:06+03:00",
-      "data": {}
+      "data": { }
     },
     "relationships": {
       "connections": {
@@ -228,21 +236,25 @@ curl 'http://localhost:3000/v1/diories/1'
         "self": "http://localhost:3000/v1/diories/3649"
       },
       "attributes": {
-        "diory-id": "diomber-diory-diomber-diory-773",
+        "diory-id": "diomber-diory-diomber-diory-775",
         "room-id": "5e423f7c-8545-4ae9-ad7d-634a7f00e03a",
         "version": "0.1.9",
         "diory-type": "thing",
         "name": "Sunday - May 31",
         "address": null,
         "background": null,
-        "location": {
-        "type": "",
-        "coordinates": []
+        "geo": {
+          "type": "GeoCircle",
+          "latitude": null,
+          "longitude": null,
+          "geoRadius": "50"
         },
+        latitude: null,
+        longitude: null,
         "date": null,
-        "created": "2015-05-31T13:12:04+03:00",
-        "modified": "2015-05-31T13:12:04+03:00",
-        "data": {}
+        "created": "2015-05-31T13:45:06+03:00",
+        "modified": "2015-05-31T13:45:06+03:00",
+        "data": { }
       },
       "relationships": {
         "connections": {
@@ -272,21 +284,25 @@ curl 'http://localhost:3000/v1/diories/1'
         "self": "http://localhost:3000/v1/diories/3650"
       },
       "attributes": {
-        "diory-id": "diomber-diory-diomber-diory-824",
+        "diory-id": "diomber-diory-diomber-diory-775",
         "room-id": "5e423f7c-8545-4ae9-ad7d-634a7f00e03a",
         "version": "0.1.9",
         "diory-type": "event",
         "name": "Kahvila Runo - Sunday - May 31",
         "address": null,
         "background": null,
-        "location": {
-          "type": "",
-          "coordinates": []
+        "geo": {
+          "type": "GeoCircle",
+          "latitude": null,
+          "longitude": null,
+          "geoRadius": "50"
         },
+        latitude: null,
+        longitude: null,
         "date": null,
-        "created": "2015-06-19T08:39:17+03:00",
-        "modified": "2015-06-19T08:39:17+03:00",
-        "data": {}
+        "created": "2015-05-31T13:45:06+03:00",
+        "modified": "2015-05-31T13:45:06+03:00",
+        "data": { }
       },
       "relationships": {
         "connections": {
