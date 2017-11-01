@@ -37,14 +37,38 @@ It suggests diories as search results or diories to be created.
 
 ## CHANGELOG
 
+### 2017-10-31 - Before Winter Release
+
+**Upgrades**
+- Diograph Admin app initial release
+- diograph-store npm package => 0.0.10
+- diory-server => 0.6.0
+- upload-image initial version
+
+**Added**
+- *DiographStore:* update diory implemented, PUT requests
+- *DiographStore:* support for geo property (latitude & longitude)
+- *DiographAdmin:* search diories with diograph-search-create component
+- *DiographAdmin:* show and update diory attributes and show background image
+- *UploadImage:* extract image file EXIF tag contents to image diory and upload EXIF thumbnail .tiff to S3
+
+### 2017-09-16 Search-create mid-release
+
+**Upgrades**
+- diograph-search-create npm package => 0.0.5
+
+**Added**
+- new DiographSearchCreate as a React component
+
 ### 2017-08-21 - August Release
 
-**Upgrades:**
+**Upgrades**
 - Diograph-store npm package => 0.0.8
 - Diograph-authentication npm package => 0.0.9
 - Initial search-create component => 0.0.1
+- diory-server => 0.5.0
 
-**Added:**
+**Added**
 - *CheckInApp:* Diograph-authentication in use, multiple users enabled
 - *CheckInApp:* Diograph-store in use
 - *DiographServer:* Sign up & sign in & initial home screen
