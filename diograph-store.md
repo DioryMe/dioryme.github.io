@@ -151,15 +151,60 @@ Returns Promise\<ConnectionObject>.
 }
 ```
 
-### DiographStore.demoteDiories(fromDioryId, toDioryId)
+### DiographStore.getConnection(fromDioryId, toDioryId)
+
+Gets the connection between two diories.
+
+Current connection interface:
+```
+{
+  position: {
+    width: "20%",
+    top: "60%",
+    height: "20%",
+    left: "220%"
+  },
+  from-diory-id: 1,
+  to-diory-id: 914
+}
+```
+
+Returns Promise\<Connection>.
+
+
+### DiographStore.updateConnection(fromDioryId, toDioryId, obj)
+
+Updates the connection between two diories.
+
+Returns Promise\<Connection>.
+
+
+### DiographStore.deleteConnection(fromDioryId, toDioryId)
 
 Deletes connection between two diories.
 
-Returns Promise\<void>.
+Returns Promise\<ConnectionObject>.
 
+```
+{
+  "connection": null,
+  "reversedConnection": null,
+  "fromDiory": <Diory>,
+  "toDiory": <Diory>
+}
+```
 
-### DiographStore.demoteDioriesStrongly(fromDioryId, toDioryId)
+### DiographStore.deleteStrongConnection(fromDioryId, toDioryId)
 
-Deletes connection of two diories from both sides.
+Deletes connection of two diories from both sides. If connection is only from one side, it deletes
 
-Returns Promise\<void>.
+Returns Promise\<ConnectionObject>.
+
+```
+{
+  "connection": null,
+  "reversedConnection": null,
+  "fromDiory": <Diory>,
+  "toDiory": <Diory>
+}
+```
