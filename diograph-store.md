@@ -183,28 +183,10 @@ Returns Promise\<Connection>.
 
 Deletes connection between two diories.
 
-Returns Promise\<ConnectionObject>.
-
-```
-{
-  "connection": null,
-  "reversedConnection": null,
-  "fromDiory": <Diory>,
-  "toDiory": <Diory>
-}
-```
+Returns Promise\<void>.
 
 ### DiographStore.deleteStrongConnection(fromDioryId, toDioryId)
 
 Deletes connection of two diories from both sides. If connection is only from one side, it deletes
 
-Returns Promise\<ConnectionObject>.
-
-```
-{
-  "connection": null,
-  "reversedConnection": null,
-  "fromDiory": <Diory>,
-  "toDiory": <Diory>
-}
-```
+Returns Promise\<void>.
