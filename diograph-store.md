@@ -43,7 +43,9 @@ Current diory interface:
   connectedDiories = Array<Diory>;
 ```
 
-Returns Promise\<Diory>.
+Returns Promise\<Diory> if diory exists.
+
+Returns Promise\<null> if not found.
 
 ### DiographStore.getAllDiories(type\*)
 
