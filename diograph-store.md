@@ -169,7 +169,9 @@ Current connection interface:
 }
 ```
 
-Returns Promise\<Connection>.
+Returns Promise\<Connection> if connection exists.
+
+Returns Promise\<null> if connection not found.
 
 
 ### DiographStore.updateConnection(fromDioryId, toDioryId, obj)
