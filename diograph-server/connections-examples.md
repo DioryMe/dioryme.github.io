@@ -16,6 +16,7 @@ curl 'http://localhost:3000/v1/connections?filter[from-diory-id]=1&filter[to-dio
 
 ## GET /connections?filter[from-diory-id]=1&filter[to-diory-id]=651 response
 
+```
 {
     "data": [
         {

@@ -59,6 +59,8 @@ DELETE /diories/1
 
 ### Connections
 ```
+GET /connections
+
 GET /connections/1
 
 POST /connections
