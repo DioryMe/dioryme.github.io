@@ -37,6 +37,14 @@ It suggests diories as search results or diories to be created.
 
 ## CHANGELOG
 
+### 2017-12-26 - Christmas Release
+
+**Upgrades**
+- diory-server => 0.7.0
+
+**Added**
+- *DioryServer:* Connection endpoint requires from-diory-id and to-diory-id parameters to work (`"?filter[from-diory-id]=1&filter[to-diory-id]=2"`)
+
 ### 2017-10-31 - Before Winter Release
 
 **Upgrades**
@@ -47,7 +55,7 @@ It suggests diories as search results or diories to be created.
 
 **Added**
 - *DiographStore:* update diory implemented, PUT requests
-- *DiographStore:* support for geo property (latitude & longitude)
+- *DiographStore & DioryServer:* support for geo property (latitude & longitude)
 - *DiographAdmin:* search diories with diograph-search-create component
 - *DiographAdmin:* show and update diory attributes and show background image
 - *UploadImage:* extract image file EXIF tag contents to image diory and upload EXIF thumbnail .tiff to S3
