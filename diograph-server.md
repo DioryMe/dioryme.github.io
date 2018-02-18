@@ -46,6 +46,11 @@ GET /diories?filter[diory-type]=place
 GET /diories
 
 GET /diories/1
+GET /diories/1.dg
+GET /diories/abc123de-4567-abcd-efge-123abc456def
+GET /diories/abc123de-4567-abcd-efge-123abc456def.dg
+
+GET /diories/abc123de-4567-abcd-efge-123abc456def/verify
 
 POST /diories
 
