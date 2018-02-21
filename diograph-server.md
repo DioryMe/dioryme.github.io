@@ -78,6 +78,14 @@ DELETE /connections/1
 [Example requests and responses](diograph-server/connections-examples.html)
 
 
+### Diograph
+```
+GET /diograph
+```
+
+[Example requests and responses](diograph-server/diograph-examples.html)
+
+
 ### Search
 
 ```

@@ -9,6 +9,10 @@ GET /diories/1 request
 
 GET /diories/1 response
 
+GET /diories/1/verify request
+
+GET /diories/1/verify response
+
 [POST /diories & PATCH /diories/123 & DELETE /diories/123](https://github.com/jvalanen/diory-docs/wiki)
 
 ## GET /diories request
@@ -335,3 +339,28 @@ curl 'http://localhost:3000/v1/diories/1'
 }
 ```
 
+
+## GET /diories/1/verify request
+
+```
+http://localhost:3000/v1/diories/438888ef-4bd3-4598-bd42-b0f0e36236e5/verify?checksum=dc870963cdd55c76f4fe16bf3bff42d9
+
+Header: Authorization df548369-d0a2-4ca5-b28a-dd4fb14c1f08
+```
+
+
+## GET /diories/1/verify response
+
+```
+{
+    "exists": true,
+    "changed": false,
+    "identifier_array": [
+        "438888ef-4bd3-4598-bd42-b0f0e36236e5",
+        "632",
+        "dc870963cdd55c76f4fe16bf3bff42d9",
+        "/v1/diories/438888ef-4bd3-4598-bd42-b0f0e36236e5.dg",
+        "/Unknown/TEST DIORY.dg"
+    ]
+}
+```
