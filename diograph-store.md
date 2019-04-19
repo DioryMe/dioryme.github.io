@@ -1,4 +1,4 @@
-# Diograph Store
+# Diograph Store npm package (Typescript/JS)
 
 Easy-to-use API for Diograph API. Read, write and connect diories without manual REST requests. Build your Diograph app without a hassle.
 
