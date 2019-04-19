@@ -27,8 +27,8 @@ puts "Hello, I'm #{diory.name} diory and I have #{diory.connected_diories.count}
 Examples assumes that the following things are defined:
 
 ```
-# Install gems
-bundle install
+# Go into container
+docker-compose run client bash
 # Console
 irb
 # Require diograph_store
