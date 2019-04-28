@@ -54,7 +54,7 @@ GET /diories/abc123de-4567-abcd-efge-123abc456def/verify
 
 POST /diories
 
-PATCH /diories/1
+PUT /diories/1
 
 DELETE /diories/1
 ```
@@ -65,12 +65,14 @@ DELETE /diories/1
 ### Connections
 ```
 GET /connections
+GET /connections?filter[from-diory-id]=abc123de-4567-abcd-efge-123abc456def&filter[to-diory-id]=ced356de-5532-sdfg-tnhy-5643jnd542od
 
 GET /connections/1
+GET /connections/0644cca6-8d54-451f-8560-9a1d4da60ff5
 
 POST /connections
 
-PATCH /connections/1
+PUT /connections/1
 
 DELETE /connections/1
 ```
