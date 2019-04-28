@@ -9,13 +9,13 @@ Build your Diograph app without a hassle.
 ## Install
 
 ```
-gem install diograph_store
+gem install diograph-store
 ```
 
 ## Example
 
 ```
-require 'diograph_store'
+require 'diograph-store'
 
 diory = DiographStore::DiographStore.get_diory('123-abc-456')
 
@@ -31,9 +31,9 @@ Examples assumes that the following things are defined:
 docker-compose run client bash
 # Console
 irb
-# Require diograph_store
+# Require diograph-store
 require 'bundler/setup'
-require 'diograph_store'
+require 'diograph-store'
 # Define ENV's
 ENV['DIOGRAPH_STORE_HOST'] = 'http://host.docker.internal:3000'
 ENV['DIOGRAPH_STORE_TOKEN'] = 'testtoken'
