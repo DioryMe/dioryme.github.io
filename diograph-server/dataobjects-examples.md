@@ -22,14 +22,16 @@ curl 'http://localhost:3000/v1/dataobjects?filter[md5]=ij309g43g3ijg380jg&filter
 200 - OK
 
 {
-   "data" : {
+  "data" : [
+    {
       "id" : "1",
       "type" : "dataobjects",
       "links" : {
          "self" : "http://localhost:3000/v1/dataobjects/1"
       },
       "attributes": {
-        "id": "123-abc-asdf",
+        "id": 1,
+        "dataobject-id": "123-abc-asdf",
         "MD5": "ij309g43g3ijg380jg",
         "file-size": 643554,
         "s3-upload-url": "https://presignedurldemo.s3.eu-west-2.amazonaws.com/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJJWZ7B6WCRGMKFGQ%2F20180210%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Date=20180210T171315Z&X-Amz-Expires=1800&X-Amz-Signature=12b74b0788aa036bc7c3d03b3f20c61f1f91cc9ad8873e3314255dc479a25351&X-Amz-SignedHeaders=host"
@@ -42,7 +44,8 @@ curl 'http://localhost:3000/v1/dataobjects?filter[md5]=ij309g43g3ijg380jg&filter
             }
          }
       }
-   }
+    }
+  ]
 }
 ```
 
@@ -57,10 +60,9 @@ curl 'http://localhost:3000/v1/dataobjects' \
   --data-binary '{
       "data": {
         "attributes": {
-          "id": "123-abc-asdf",
+          "dataobject-id": "123-abc-asdf",
           "MD5": "ij309g43g3ijg380jg",
-          "file-size": 643554,
-          "s3-upload-url": "https://presignedurldemo.s3.eu-west-2.amazonaws.com/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJJWZ7B6WCRGMKFGQ%2F20180210%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Date=20180210T171315Z&X-Amz-Expires=1800&X-Amz-Signature=12b74b0788aa036bc7c3d03b3f20c61f1f91cc9ad8873e3314255dc479a25351&X-Amz-SignedHeaders=host"
+          "file-size": 643554
         },
         "type": "dataobjects"
       }
@@ -72,27 +74,28 @@ curl 'http://localhost:3000/v1/dataobjects' \
 201 - Created
 
 {
-   "data" : {
-      "id" : "1",
-      "type" : "dataobjects",
-      "links" : {
-         "self" : "http://localhost:3000/v1/dataobjects/1"
-      },
-      "attributes": {
-        "id": "123-abc-asdf",
-        "MD5": "ij309g43g3ijg380jg",
-        "file-size": 643554,
-        "s3-upload-url": "https://presignedurldemo.s3.eu-west-2.amazonaws.com/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJJWZ7B6WCRGMKFGQ%2F20180210%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Date=20180210T171315Z&X-Amz-Expires=1800&X-Amz-Signature=12b74b0788aa036bc7c3d03b3f20c61f1f91cc9ad8873e3314255dc479a25351&X-Amz-SignedHeaders=host"
-      },
-      "relationships" : {
-         "room" : {
-            "links" : {
-               "self" : "http://localhost:3000/v1/dataobjects/1/relationships/room",
-               "related" : "http://localhost:3000/v1/dataobjects/1/room"
-            }
-         }
-      }
-   }
+  "data" : {
+    "id" : "1",
+    "type" : "dataobjects",
+    "links" : {
+       "self" : "http://localhost:3000/v1/dataobjects/1"
+    },
+    "attributes": {
+      "id": 1,
+      "dataobject-id": "123-abc-asdf",
+      "MD5": "ij309g43g3ijg380jg",
+      "file-size": 643554,
+      "s3-upload-url": "https://presignedurldemo.s3.eu-west-2.amazonaws.com/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJJWZ7B6WCRGMKFGQ%2F20180210%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Date=20180210T171315Z&X-Amz-Expires=1800&X-Amz-Signature=12b74b0788aa036bc7c3d03b3f20c61f1f91cc9ad8873e3314255dc479a25351&X-Amz-SignedHeaders=host"
+    },
+    "relationships" : {
+       "room" : {
+          "links" : {
+             "self" : "http://localhost:3000/v1/dataobjects/1/relationships/room",
+             "related" : "http://localhost:3000/v1/dataobjects/1/room"
+          }
+       }
+    }
+  }
 }
 ```
 
