@@ -13,7 +13,7 @@ GET /diories/1/verify request
 
 GET /diories/1/verify response
 
-[POST /diories & PATCH /diories/123 & DELETE /diories/123](https://github.com/jvalanen/diory-docs/wiki)
+[POST /diories & PATCH /diories/123 & DELETE /diories/123](https://github.com/jvalanen/diory-docs/wiki/Writing-diories)
 
 ## GET /diories request
 

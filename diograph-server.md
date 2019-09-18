@@ -64,8 +64,7 @@ DELETE /diories/1
 
 ### Connections
 ```
-GET /connections
-GET /connections?filter[from-diory-id]=abc123de-4567-abcd-efge-123abc456def&filter[to-diory-id]=ced356de-5532-sdfg-tnhy-5643jnd542od
+GET /connections?filter[from-diory-id]=1&filter[to-diory-id]=651
 
 GET /connections/1
 GET /connections/0644cca6-8d54-451f-8560-9a1d4da60ff5
@@ -78,6 +77,15 @@ DELETE /connections/1
 ```
 
 [Example requests and responses](diograph-server/connections-examples.html)
+
+### Dataobjects
+```
+GET /dataobjects?filter[md5]=ij309g43g3ijg380jg&filter[file-size]=643554
+
+POST /dataobjects
+```
+
+[Example requests and responses](diograph-server/dataobjects-examples.html)
 
 
 ### Diograph
