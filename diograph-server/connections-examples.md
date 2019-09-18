@@ -1,21 +1,26 @@
 
-# Example requests & responses - GET
+# Example /connections requests & responses
 
-GET /connections
+```
+GET /connections?filter[from-diory-id]=1&filter[to-diory-id]=651
 
 GET /connections/123
+```
 
-[POST /connections & DELETE /connections/123](https://github.com/jvalanen/diory-docs/wiki)
+[POST /connections & DELETE /connections/123](https://github.com/jvalanen/diory-docs/wiki/Writing-connections)
 
-## GET /connections?filter[from-diory-id]=1&filter[to-diory-id]=651 request
+## GET /connections?filter[from-diory-id]=1&filter[to-diory-id]=651
+
+**NOTE:** This doesn't work with uuid's. This works intentionally only with numeric ids as uuid's are currently not mandatory requirement and they would be hard to implement as they are not primary keys
+
+**Request**
 ```
 curl 'http://localhost:3000/v1/connections?filter[from-diory-id]=1&filter[to-diory-id]=651' \
   -H 'Authorization: 5e423f7c-8545-4ae9-ad7d-634a7f00e03a' \
   -H 'Accept: application/vnd.api+json'
 ```
 
-## GET /connections?filter[from-diory-id]=1&filter[to-diory-id]=651 response
-
+**Response**
 ```
 {
     "data": [
@@ -62,15 +67,16 @@ curl 'http://localhost:3000/v1/connections?filter[from-diory-id]=1&filter[to-dio
 ```
 
 
-## GET /connections/123 request
+## GET /connections/123
+
+**Request**
 ```
 curl 'http://localhost:3000/v1/connections/10116' \
   -H 'Authorization: 5e423f7c-8545-4ae9-ad7d-634a7f00e03a' \
   -H 'Accept: application/vnd.api+json'
 ```
 
-## GET /connections/123 response
-
+**Response**
 ```
 {
   "data": {
