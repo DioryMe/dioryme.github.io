@@ -51,6 +51,8 @@ curl 'http://localhost:3000/v1/dataobjects?filter[md5]=ij309g43g3ijg380jg&filter
 
 ## POST /dataobjects
 
+**NOTE:** If dataobject already exists with given md5 and file-size, response with error message 'Dataobject with given MD5 and filesize already exists' with status code 422
+
 **Request**
 ```
 curl 'http://localhost:3000/v1/dataobjects' \
@@ -60,8 +62,7 @@ curl 'http://localhost:3000/v1/dataobjects' \
   --data-binary '{
       "data": {
         "attributes": {
-          "dataobject-id": "123-abc-asdf",
-          "MD5": "ij309g43g3ijg380jg",
+          "md5": "ij309g43g3ijg380jg",
           "file-size": 643554
         },
         "type": "dataobjects"
@@ -83,7 +84,7 @@ curl 'http://localhost:3000/v1/dataobjects' \
     "attributes": {
       "id": 1,
       "dataobject-id": "123-abc-asdf",
-      "MD5": "ij309g43g3ijg380jg",
+      "md5": "ij309g43g3ijg380jg",
       "file-size": 643554,
       "s3-upload-url": "https://presignedurldemo.s3.eu-west-2.amazonaws.com/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJJWZ7B6WCRGMKFGQ%2F20180210%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Date=20180210T171315Z&X-Amz-Expires=1800&X-Amz-Signature=12b74b0788aa036bc7c3d03b3f20c61f1f91cc9ad8873e3314255dc479a25351&X-Amz-SignedHeaders=host"
     },
