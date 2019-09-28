@@ -51,7 +51,7 @@ curl 'http://localhost:3000/v1/dataobjects?filter[md5]=ij309g43g3ijg380jg&filter
 
 ## POST /dataobjects
 
-**NOTE:** If dataobject already exists with given md5 and file-size, response with error message 'Dataobject with given MD5 and filesize already exists' with status code 422
+**NOTE:** If dataobject already exists with given md5 and file-size, response with error message 'md5 - has already been taken' with status code 422
 
 **Request**
 ```
