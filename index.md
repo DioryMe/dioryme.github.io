@@ -37,6 +37,28 @@ It suggests diories as search results or diories to be created.
 
 ## CHANGELOG
 
+### 2019-10-30 - Dataobjects
+
+**Upgrades**
+- diory-server => 0.8.0
+
+**Added**
+- *DioryServer:* `/v1/dataobjects` endpoint
+
+### 2019-01-20
+
+- DiographStore Ruby gem (extracted from Genealogy Ruby app)
+- Admin tool (Ruby)
+- Receipt app (Ruby)
+
+### 2018-12-31
+
+Genealogy Ruby app (with built-in store for API requests)
+
+### 2018-08-12
+
+Diograph docker environment
+
 ### 2017-12-26 - Christmas Release
 
 **Upgrades**
